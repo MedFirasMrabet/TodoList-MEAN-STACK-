@@ -1,0 +1,57 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="container">
+
+
+
+  <div class="text-center">
+    <div class="card card-inverse card-info">
+      <div class="card-block">
+        <figure class="profile profile-inline">
+        </figure>
+        <h4 class="card-title">Kostas Konovodoff </h4>
+        <div class="card-text">
+          <details>
+            <summary>in this application you can test these features : <p style="color: blue;">(click here)</p></summary>
+            <p>
+              <details>
+                <summary>FrontEnd :</summary>
+                <ul>
+                  <li>
+                    <p>cannot use invalid format of mail and password[minlength = 5] (using form groupe & form
+                      validator)</p>
+                  </li>
+                  <li>
+                    cannot access to todo page using this route ('/todo') only if u have token stored in cookies
+                    (using
+                    canActivate & Authguard)
+                  </li>
+                </ul>
+
+              </details>
+            </p>
+            <p>
+              <details>
+                <summary>BackEnd :</summary>
+                <ul>
+                  <li>can't manage todos without having a proper token
+                    (using passport)</li>
+                  <li>cannot access to todo page using this route ('/todo') only if u have token stored in cookies
+                    (using
+                    canActivate & Authguard)</li>
+                </ul>
+
+              </details>
+          </details>
+          <p>you can also check node js project architecture </p>
+        </div>
+      </div>
+      <div class="card-footer">
+        <a href="/register" style="color: white;" class="btn btn-info btn-sm">Start</a>
+    </div>
+    </div>
+  </div>
+</div>

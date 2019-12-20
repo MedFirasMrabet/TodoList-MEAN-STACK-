@@ -1,0 +1,43 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="container register-form">
+  <div class="form">
+    <div class="note">
+      <p>This is the Register Form</p>
+    </div>
+    <form class="ts-form" [formGroup]="registerForm" (ngSubmit)="register(registerForm)">
+      <div class="form-content">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <input type="email" class="form-control " formControlName="email" placeholder="Email" required>
+              <div>
+                <!-- <span *ngIf="email" class="glyphicon glyphicon-remove form-control-feedback">email is required</span> -->
+
+              </div>
+              <div>
+                <span *ngIf="email" class="glyphicon glyphicon-remove form-control-feedback">email is not valid</span>
+
+              </div>
+            </div>
+            <div class="input-group ts-has-password-toggle">
+              <input type="password" class="form-control" formControlName="password" placeholder="Password"
+                value="Sercet_123" required>
+
+
+
+            </div>
+            <!-- <div><span *ngIf="!password" class="glyphicon glyphicon-remove form-control-feedback"> password is required</span></div> -->
+            <div><span *ngIf="password" class="glyphicon glyphicon-remove form-control-feedback"> password is not valide</span></div>
+          </div>
+
+        </div>
+        <button type="submit" class="btn btn-primary">Register</button>
+      </div>
+    </form>
+
+  </div>
+</div>
