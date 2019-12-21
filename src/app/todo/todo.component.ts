@@ -68,6 +68,10 @@ export class TodoComponent implements OnInit {
     })
   }
 
+  logout() {
+    this.auth.logout()
+  }
+
   ngOnInit() {
     this.todoService.getTodos().subscribe(data => {
 

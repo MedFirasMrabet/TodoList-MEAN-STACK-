@@ -2,6 +2,8 @@
 <div id="myDIV" class="header">
   <p>your email is <span style='color :black'>{{auth.getUser().email}}</span> from decoding token
   </p>
+  <button (click)='logout()' class="addBtn">logout</button>
+
   <h2>My To Do List</h2>
   <form #f="ngForm" (ngSubmit)="onSubmit(f)">
     <input name="todo" ngModel type="text">
